@@ -60,7 +60,7 @@ def send_emails(name, to_email, pay, png_file):
 
 
 
-Run the program
+#Run the program
 search_png_files()
 for user in data:
 	name = user[0]
