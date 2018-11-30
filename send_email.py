@@ -40,6 +40,7 @@ def send_emails(name, to_email, pay, png_file):
 	msg['From'] = user_details['email']
 	msg['To'] = to_email
 	msg['Subject'] = 'Payment Breakdown'
+
 	Message = 'Hey %s,<br><br>Here is your payment breakdown<br><br><img src="cid:image1"><br><br>Total:$%s<br><br>Thanks' % (name, pay)
 	msgBody = MIMEText(Message,'html')
 
@@ -67,7 +68,7 @@ for user in data:
 	to_email = search_email(name)
 	pay = user[1]
 	png_file = user[2]
-	#send_emails(name, to_email,pay,png_file)
-	print( name + " - " + to_email + " - " + pay + " - " + png_file)
+	send_emails(name, to_email,pay,png_file)
+	#print( name + " - " + to_email + " - " + pay + " - " + png_file)
 print('Emails Sent')
 
