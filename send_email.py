@@ -68,7 +68,7 @@ for user in data:
 	to_email = search_email(name)
 	pay = user[1]
 	png_file = user[2]
-	send_emails(name, to_email,pay,png_file)
-	#print( name + " - " + to_email + " - " + pay + " - " + png_file)
+	#send_emails(name, to_email,pay,png_file)
+	print( name + " - " + to_email + " - " + pay + " - " + png_file)
 print('Emails Sent')
 
