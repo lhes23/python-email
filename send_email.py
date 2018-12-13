@@ -20,12 +20,14 @@ def search_png_files():
 def search_email(name):
 	mylist = {
 		'charles':'copywritercharlesfrenoy@gmail.com',
+		'wednes':'wednes@gmail.com',
 		'elliot':'efigueira00@gmail.com',
 		'emily':'amomugendi@gmail.com',
-		'garrett':'Garrettgsmith87@gmail.com',
+		'garret':'Garrettgsmith87@gmail.com',
 		'jackie':'Jappel2608@yahoo.com ',
 		'jalil':'jaliljones1@gmail.com',
 		'jani':'workaroundfamily@gmail.com',
+		'sasha':'sashadiaz949@gmail.com',
 		'lester':'lesterreandino@gmail.com',
 	}
 	#print(mylist.get(name,"No Name"))
