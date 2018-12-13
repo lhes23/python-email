@@ -42,6 +42,7 @@ def send_emails(name, to_email, pay, png_file):
 	msg['From'] = user_details['email']
 	msg['To'] = to_email
 	msg['Subject'] = 'Payment Breakdown'
+
 	Message = 'Hey %s,<br><br>Here is your payment breakdown<br><br><img src="cid:image1"><br><br>Total:$%s<br><br>Thanks' % (name, pay)
 	msgBody = MIMEText(Message,'html')
 
